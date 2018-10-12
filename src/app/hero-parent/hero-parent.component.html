@@ -1,0 +1,11 @@
+<app-hero-child 
+  (heroCreated)="onHeroAdded($event)">
+</app-hero-child>
+<app-hero-list
+  *ngFor="let hero of newHeroes"
+  [hero] ="hero">
+</app-hero-list>
+<app-hero-list
+  *ngFor="let hero of heroes"
+  [hero] ="hero">
+</app-hero-list>

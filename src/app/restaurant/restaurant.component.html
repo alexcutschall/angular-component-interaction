@@ -1,0 +1,14 @@
+<app-menu-item 
+  (menuItemCreated)="onMenuItemAdded($event)">
+</app-menu-item>
+
+<app-menu-list
+  *ngFor="let item of items" 
+  [item] = "item"
+  [greeting] = "sir">
+</app-menu-list>
+<app-menu-list
+  *ngFor="let item of newItems" 
+  [item] = "item"
+  [greeting] = "sir">
+</app-menu-list>
